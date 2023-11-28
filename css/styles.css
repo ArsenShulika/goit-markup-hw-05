@@ -504,6 +504,7 @@ img {
 }
 
 .title-social-link {
+  display: flex;
   color: #fff;
   font-family: Roboto;
   font-size: 16px;
@@ -556,16 +557,18 @@ img {
 .footer-label {
   display: flex;
   flex-direction: row;
+  color: #fff;
   gap: 24px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-input {
-  color: #fff;
+  display: block;
   font-family: Roboto, sans-serif;
   padding: 8px 16px;
   width: 264px;
@@ -602,4 +605,8 @@ img {
   border-radius: 4px;
   background: #404bbf;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.svg-send {
+  fill: #fff;
 }
