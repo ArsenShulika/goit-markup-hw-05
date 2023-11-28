@@ -461,26 +461,42 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
+        <div>
           <form class="footer-form">
-            <label class="footer-label" for="email">Subscribe </label>
-            <input
-              class="footer-input"
-              type="email"
-              name="user_email"
-              placeholder="arsshulika@gmail.com"
-              id="email"
-              autofocus
-            />
-            <button class="footer-btn" type="submit">
-              Subscribe
-              <svg class="svg-send" width="24" height="24">
-                <use href="./images/sprite-icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <p class="footer-label">Subscribe</p>
+            <label class="footer-label" for="email">
+              <input
+                class="footer-input"
+                type="email"
+                name="user_email"
+                placeholder="benjaminfranklin@gmail.com"
+                id="email"
+                autofocus
+              />
+              <button class="footer-btn" type="button">
+                Subscribe
+                <svg class="svg-send" width="24" height="24">
+                  <use href="./images/sprite-icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
           </form>
         </div>
       </div>
+      
+        <form class="contacts-form">
+          <p class="contact-form-text">Leave your contacts and we will call you back</p>
+            <div class="container-label">
+              <label class="contact-form-name">Name<input class="contact-input-name" type="name"></label>
+              <label class="contact-form-phone">Phone<input class="contact-input-phone" type="Phone"></label>
+              <label class="contact-form-email">Email<input class="contact-input-email" type="Email"></label>
+              <label class="contact-form-comment">Comment<textarea class="contact-textarea-input"name="" id="" cols="30" rows="10"></textarea></label>         
+            </div> 
+            <div class="form-checkbox-container">
+              <label class="contact-checkbox"><input class="contact-checkbox" type="checkbox"></label>
+              <p>I accept the terms and conditions of the <a  href="">Privacy Policy</a></p> 
+            </div>
+            <button>Send</button>
     </footer>
   </body>
 </html>

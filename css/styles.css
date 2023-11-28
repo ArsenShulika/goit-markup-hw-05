@@ -185,10 +185,8 @@ img {
 .hero {
   max-width: 1440px;
   background-color: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/peopleoffice.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -570,17 +568,15 @@ img {
 .footer-input {
   display: block;
   font-family: Roboto, sans-serif;
+  color: #fff;
   padding: 8px 16px;
   width: 264px;
   height: 40px;
   background-color: #2e2f42;
   border-radius: 4px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
+  caret-color: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.footer-input::placeholder {
-  color: #fff;
 }
 
 .footer-btn {
@@ -609,4 +605,23 @@ img {
 
 .svg-send {
   fill: #fff;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form {
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.container-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-checkbox-container {
+  display: flex;
+  flex-direction: row;
 }
