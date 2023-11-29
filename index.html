@@ -482,48 +482,48 @@
             </button>
           </form>
         </div>
-
-        <div class="contacts-form">
-          <!-- Іконка для закриття форми -->
-          <div class="kreuz-container">
-            <svg class="kreuz-icon" width="32" height="32">
-              <use></use>
-            </svg>
-          </div>
-          <!-- Іконка для закриття форми -->
-
-          <form>
-            <p class="contact-form-text">
-              Leave your contacts and we will call you back
-            </p>
-            <div class="container-label">
-              <label class="contact-label">Name</label>
-              <input class="contact-input" type="text" />
-              <label class="contact-label">Phone </label>
-              <input class="contact-input" type="tel" />
-              <label class="contact-label">Email </label>
-              <input class="contact-input" type="Email" />
-              <label class="contact-label">Comment </label>
-              <textarea
-                class="contact-textarea-input"
-                name="comment"
-                rows="5"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-            <div class="form-checkbox-container">
-              <label class="contact-checkbox"
-                ><input class="contact-checkbox" type="checkbox"
-              /></label>
-              <p class="form-text">
-                I accept the terms and conditions of the
-                <a class="policy-link" href="">Privacy Policy</a>
-              </p>
-            </div>
-            <button class="form-btn">Send</button>
-          </form>
-        </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+    <div class="modal-bg-form">
+      <div class="modalwindow-container">
+        <button class="kreuz-btn" type="button">
+          <svg>
+            <use></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Іконка для закриття форми -->
+      <p class="contact-form-text">
+        Leave your contacts and we will call you back
+      </p>
+      <form>
+        <label class="contact-label">Name</label>
+        <input class="contact-input" type="text" />
+        <label class="contact-label">Phone </label>
+        <input class="contact-input" type="tel" />
+        <label class="contact-label">Email </label>
+        <input class="contact-input" type="Email" />
+        <label class="contact-label">Comment </label>
+        <textarea
+          class="contact-textarea-input"
+          name="comment"
+          rows="5"
+          placeholder="Text input"
+        ></textarea>
+
+        <div class="form-checkbox-container">
+          <label class="contact-checkbox"
+            ><input class="contact-checkbox" type="checkbox"
+          /></label>
+          <p class="form-text">
+            I accept the terms and conditions of the
+            <a class="policy-link" href="">Privacy Policy</a>
+          </p>
+        </div>
+        <button class="form-btn" type="button">Send</button>
+      </form>
+    </div>
   </body>
 </html>
