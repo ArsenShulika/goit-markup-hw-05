@@ -565,6 +565,11 @@ img {
   margin-bottom: 16px;
 }
 
+.form-footer {
+  display: flex;
+  gap: 24px;
+}
+
 
 .footer-label {
   display: flex;

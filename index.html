@@ -461,29 +461,28 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="form-footer-container">
           <p class="footer-text">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label" for="email">
               <input
                 class="footer-input"
                 type="email"
-                name="user_email"
-                placeholder="benjaminfranklin@gmail.com"
+                name="user-email"
+                placeholder="E-mail"
                 id="email"
                 autofocus
               />
-              <button class="footer-btn" type="submit">
-                Subscribe
-                <svg class="svg-send" width="24" height="24">
-                  <use href="./images/sprite-icons.svg#icon-send"></use>
-                </svg>
-              </button>
             </label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="svg-send" width="24" height="24">
+                <use href="./images/sprite-icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
-      </div>
-      <section>
+
         <div class="contacts-form">
           <!-- Іконка для закриття форми -->
           <div class="kreuz-container">
@@ -499,16 +498,15 @@
             </p>
             <div class="container-label">
               <label class="contact-label">Name</label>
-              <input class="contact-input" type="name" placeholder="" />
+              <input class="contact-input" type="text" />
               <label class="contact-label">Phone </label>
-              <input class="contact-input" type="Phone" placeholder="" />
+              <input class="contact-input" type="tel" />
               <label class="contact-label">Email </label>
-              <input class="contact-input" type="Email" placeholder="" />
+              <input class="contact-input" type="Email" />
               <label class="contact-label">Comment </label>
               <textarea
                 class="contact-textarea-input"
-                name=""
-                id=""
+                name="comment"
                 rows="5"
                 placeholder="Text input"
               ></textarea>
@@ -525,7 +523,7 @@
             <button class="form-btn">Send</button>
           </form>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
