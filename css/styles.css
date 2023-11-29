@@ -644,7 +644,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
   padding: 24px;
@@ -652,6 +651,7 @@ img {
   background-color: #fff;
   justify-content: center;
   margin: 0 auto;
+  background-color: rgba(46, 47, 66, 0.4);
 }
 
 .modalwindow-container {
@@ -687,22 +687,25 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.kreuz-btn:hover {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
-
+.kreuz-btn:hover,
 .kreuz-btn:focus {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
 }
 
-.svg-input-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.kreuz-icon {
+  fill: #ffffff transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.kreuz-icon:hover,
+.kreuz-icon:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
 
 
 .contact-form-text {
@@ -717,8 +720,8 @@ img {
 }
 
 .input-form-container {
-  margin-bottom: 8px;
-
+  display: block;
+  margin-bottom: 8px
 }
 
 .contact-label {
@@ -784,7 +787,7 @@ img {
 }
 
 .contact-textarea-input {
-  display: flex;
+  display: block;
   width: 100%;
   height: 120px;
   background-color: transparent;
@@ -800,8 +803,8 @@ img {
   border-radius: 4px;
   margin-bottom: 16px;
   padding: 8px 16px;
-  border: 1px solid rgba(46, 47, 66, 0.40);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.40),
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #4D5AE5;
 }
 
@@ -841,6 +844,7 @@ img {
 .checkbox {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   fill: transparent;
   width: 16px;
   height: 16px;
@@ -862,7 +866,7 @@ img {
 
 .form-btn {
   display: block;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto sans-serif;
   color: #FFF;
   min-width: 169px;
   height: 56px;
