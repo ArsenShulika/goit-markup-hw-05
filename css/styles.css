@@ -734,7 +734,9 @@ img {
   margin-bottom: 4px;
 }
 
-
+.contact-input:focus+.svg-input-icon {
+  fill: #4d5ae5;
+}
 
 .input-container {
   position: relative;
@@ -807,11 +809,9 @@ img {
   border-color: #4D5AE5;
 }
 
-
 .contact-textarea-input::placeholder {
   color: #8E8F99;
 }
-
 
 
 .form-checkbox-container {
