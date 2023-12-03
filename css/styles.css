@@ -844,6 +844,7 @@ img {
 }
 
 .checkbox-container-checked {
+  display: block;
   align-items: center;
   justify-content: center;
   fill: transparent;
