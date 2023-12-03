@@ -453,7 +453,7 @@ img {
   text-align: left;
 }
 
-/* ================ FOOTER =============== */
+/* ================ FOOTER STYLES =============== */
 
 .page-footer {
   background-color: #2e2f42;
@@ -635,34 +635,45 @@ img {
 .svg-send {
   fill: #ffffff;
   margin-left: 16px;
-
 }
 
-.modal-bg-form {
+/* ================ FOOTER STYLES =============== */
+
+/* =============== BSCKDROP STYLES ============== */
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-direction: column;
-  padding: 24px;
-  border-radius: 4px;
-  background-color: #fff;
-  justify-content: center;
-  margin: 0 auto;
   background-color: rgba(46, 47, 66, 0.4);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear,
+    visibility 250ms linear;
 }
 
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* =============== BSCKDROP STYLES ==============*/
+
+/* ============== MODAL WINDOW STYLES =============*/
+
 .modalwindow-container {
+  width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
   padding: 72px 24px 24px 24px;
-  background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -843,8 +854,12 @@ img {
   letter-spacing: 0.04em;
 }
 
-.checkbox-container-checked {
-  display: block;
+.original-checkbox:checked+.form-text-policy>.checkbox-container-custom {
+  background-color: #404BBF;
+}
+
+.checkbox-container-custom {
+  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -853,6 +868,7 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -864,6 +880,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+}
+
+.check-icon {
+  fill: #fff;
+  opacity: 0;
+
 }
 
 .form-btn {
@@ -885,4 +907,8 @@ img {
   background-color: #4D5AE5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.original-checkbox:checked+.form-text-policy .check-icon {
+  opacity: 1;
 }
