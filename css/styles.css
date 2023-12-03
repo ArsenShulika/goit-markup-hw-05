@@ -651,8 +651,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms linear,
-    visibility 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -840,7 +839,7 @@ img {
 }
 
 .form-text-policy {
-  display: flex;
+
   flex-direction: row;
   gap: 8px;
   justify-content: center;
@@ -865,6 +864,7 @@ img {
   fill: transparent;
   display: inline-flex;
   width: 16px;
+  margin-right: 8px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
@@ -908,4 +908,6 @@ img {
 
 .original-checkbox:checked+.form-text-policy .check-icon {
   opacity: 1;
+  border: none;
+  fill: #F4F4FD;
 }
