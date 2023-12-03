@@ -822,8 +822,9 @@ img {
 
 
 .form-checkbox-container {
-  display: block;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -837,7 +838,6 @@ img {
 .form-text-policy {
   display: block;
   color: #8E8F99;
-  margin-bottom: 24px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
