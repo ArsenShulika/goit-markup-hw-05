@@ -788,9 +788,6 @@ img {
   fill: #4d5ae5;
 }
 
-.textarea-form-container {
-  margin-bottom: 16px
-}
 
 .contact-comment-input {
   width: 100%;
@@ -821,7 +818,8 @@ img {
 
 .form-checkbox-container {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
 }
 
 
@@ -833,6 +831,7 @@ img {
 }
 
 .form-text-policy {
+  display: block;
   color: #8E8F99;
   margin-bottom: 24px;
   font-size: 12px;
@@ -869,6 +868,8 @@ img {
   text-decoration-line: underline;
 }
 
+
+
 .check-icon {
   opacity: 0;
 
@@ -894,6 +895,5 @@ img {
 
 .original-checkbox:checked+.form-text-policy .check-icon {
   opacity: 1;
-  border: none;
-  fill: #F4F4FD;
+
 }
